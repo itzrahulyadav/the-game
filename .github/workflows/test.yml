@@ -1,0 +1,32 @@
+name: Push Code to AWS CodeCommit
+
+on:
+  push:
+    branches:
+      - master
+
+env:
+  AWS_REGION: ap-south-1
+  AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+  AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+
+jobs:
+  push_code:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up AWS CLI
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ env.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ env.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ env.AWS_REGION }}
+
+      - name: Push code to AWS CodeCommit
+        run: |
+          aws codecommit create-branch --repository-name the-game --branch-name main
+          aws codecommit create-commit --repository-name the-game --branch-name main --author-name "GitHub Actions" --email "actions@github.com" --commit-message "Update from GitHub Actions" --put-files file://./
+          aws codecommit get-commit --repository-name the-game --commit-id HEAD
