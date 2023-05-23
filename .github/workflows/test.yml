@@ -22,7 +22,8 @@ jobs:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ap-south-1
-
+      - name: Reset repository ownership and permissions
+        run: sudo chown -R $USER $GITHUB_WORKSPACE && sudo chmod -R 777 $GITHUB_WORKSPACE
       - name: Sync up to CodeCommit
         uses: tsgit18/sync-up-to-codecommit-action@v1
         with:
