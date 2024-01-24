@@ -18,6 +18,7 @@ The following steps are needed once the laptop is provided,the joinee has access
      - Click on service request
      - select privileged access request
      - Select WIFI / Location ostrict access
+     - Fill the other details
 
 #### 3. Access to share files on teams.
 
@@ -32,5 +33,19 @@ The following steps are needed once the laptop is provided,the joinee has access
      - fill the required details
      - application name should be `IL Github`
  
-#### 5. 
+#### 5. Access to Jenkins
+
+- follow these steps:
+     - open the following link - [LINK](https://spice.icicilombard.com/servicedesk/customer/portals)
+     - Select cloud support from the given options
+     - Select DevSecOps from the given options
+     - Select the application name
+     - Select the platform as Jenkins
+     - Request type - User Creation
+ 
+       
+#### 6. Access to Jfrog
+
+- follow these steps:
+       - 
 
