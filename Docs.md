@@ -13,10 +13,11 @@ The following steps are needed once the laptop is provided,the joinee has access
 #### 2. Get access to office wifi (O$tr!ch3$)
 
 -  follow these steps:
-     - open the following link - [LINK](http://lamgroup.icicibankltd.com:97/LA_Index_New.aspx)
-     - Go to requests -> request form
-     - fill the required details
-     - application name should be `Global Protect VPN`
+     - open the following link - [LINK](https://spice.icicilombard.com/servicedesk/customer/portals)
+     - Click on End user support-Helpdesk
+     - Click on service request
+     - select privileged access request
+     - Select WIFI / Location ostrict access
 
 #### 3. Access to share files on teams.
 
