@@ -47,5 +47,9 @@ The following steps are needed once the laptop is provided,the joinee has access
 #### 6. Access to Jfrog
 
 - follow these steps:
+       - open the following link - [LINK](https://spice.icicilombard.com/servicedesk/customer/portals)https://spice.icicilombard.com/servicedesk/customer/portals)
+       - select cloud support from the given options
+       - select User Management for non admin users
+       - select user creation in request type
        - 
 
