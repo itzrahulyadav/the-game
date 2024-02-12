@@ -33,6 +33,18 @@ The following steps are needed once the laptop is provided,the joinee has access
      - fill the required details
      - application name should be `IL Github`
  
+       or
+
+- follow these steps
+      - open the following link - [LINK](https://spice.icicilombard.com/servicedesk/customer/portals)
+      - Go to Cloud Support
+      - Select DevSecOps
+      - Select the application name
+      - select the platform as Github
+      - In the Request type select - User Creation
+      - Provide the justification.
+      - Click on create
+ 
 #### 5. Access to Jenkins
 
 - follow these steps:
